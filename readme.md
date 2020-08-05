@@ -6,7 +6,7 @@ To get started you need to get everything set up so we are able to run our React
 
 ## GitLab Pages URL
 
-https://josephdubon.gitlab.io/
+https://josephdubon.gitlab.io/q2-assessment-react-basics-sports-game
 
 ### Setup
 
