@@ -1,4 +1,4 @@
-## React Basics Lab: A Sports Game
+# React Basics Lab: A Sports Game
 
 In this lab, you will build a simple sports game. This lab will exercise your comfort level with JSX, Both stateful and stateless ReactJS components, working with props, and leveraging local state within a stateful component.
 
@@ -6,7 +6,7 @@ To get started you need to get everything set up so we are able to run our React
 
 ## GitLab Pages URL
 
-https://josephdubon.gitlab.io/q2-assessment-react-basics-sports-game
+<https://josephdubon.gitlab.io/q2-assessment-react-basics-sports-game>
 
 ### Setup
 
