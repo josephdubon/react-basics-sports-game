@@ -5,9 +5,9 @@ console.log('Connection confirmed. Happy hacking!')
 function App(props) {
   return (
     <div>
-      <h1>Welcome to the sports game starter</h1>
+      <h1> Welcome to the sports game starter </h1>
       This file represents the code after completing the setup step in the lab
-      instructions
+      instructions{' '}
     </div>
   )
 }
