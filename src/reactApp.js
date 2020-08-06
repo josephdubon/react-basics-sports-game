@@ -86,7 +86,7 @@ function App(props) {
             <br />
             <ul>
               <li>HTML5</li>
-              <li>CSS</li>
+              <li>CSS3</li>
               <li>ReactJS</li>
             </ul>
             <br /> <br />
