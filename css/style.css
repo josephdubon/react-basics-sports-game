@@ -141,3 +141,63 @@ table {
 }
 
 /* Start Here */
+
+html {
+  background: url(../assets/soccerFiieldBG.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  padding: 15px;
+  margin: 5px;
+}
+
+#gameBody {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#gameHeader {
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 5px;
+}
+
+#gameIntro {
+  font-size: 20px;
+}
+
+#teamsArea {
+  background-color: rgba(0, 0, 0, 0.575);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 0 25px;
+  border: 25px solid black;
+  margin: 15px 0;
+}
+
+#teamsArea img {
+  width: 300px;
+}
+
+#homeTeam {
+  background-color: rgba(0, 0, 0, 0.76);
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 25px;
+  margin: 15px;
+}
+
+#visitTeam {
+  background-color: rgba(255, 255, 255, 0.76);
+  color: #000;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 25px;
+  margin: 15px;
+}

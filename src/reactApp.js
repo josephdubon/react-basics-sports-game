@@ -32,8 +32,9 @@ class Team extends React.Component {
   render() {
     return (
       <div>
-        Team Name: {this.state.teamName} <br />
-        Team Logo: <br /> <img src={this.state.teamLogo} width="50px" /> <br />
+        Team Logo: <br /> <img src={this.state.teamLogo} /> <br />
+        <br />
+        Team Name: {this.state.teamName}
         <br />
         Shots Taken: {this.state.shotsTaken}
         <br />
@@ -49,17 +50,25 @@ class Team extends React.Component {
 // Deafault App component that all other compents are rendered through
 function App(props) {
   return (
-    <div>
-      <h1> Welcome to the sports game starter </h1>
-      This file represents the code after completing the setup step in the lab
-      instructions.
-      <br />
-      <br />
-      <br />
-      <Team
-        teamName="Team 1"
-        teamLogo="https://www.jetpunk.com/img/user-photo-library/24/245b108023-235.png"
-      />
+    <div id="gameBody">
+      <h1 id="gameHeader"> Welcome to the sports game starter </h1>
+
+      <p id="gameIntro">
+        This file represents the code after completing the setup step in the lab
+        instructions.
+      </p>
+
+      <span id="teamsArea">
+        {/* Home Team */}
+        <span id="homeTeam">
+          <Team teamName="HOME Team" teamLogo="../assets/homeTeam.png" />
+        </span>
+
+        {/* Visiting team */}
+        <span id="visitTeam">
+          <Team teamName="VISITOR Team" teamLogo="../assets/visitingTeam.png" />
+        </span>
+      </span>
     </div>
   )
 }
