@@ -174,10 +174,12 @@ header {
 
 aside {
   display: flex;
+  justify-content: center;
   align-items: center;
+  width: 300px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
   text-align: center;
   padding: 15px;

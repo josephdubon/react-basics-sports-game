@@ -57,7 +57,7 @@ function App(props) {
           Each click of the 'shoot button' will give you a 1 in 4 chance to
           score.
           <br />
-          <small>May the odds be ever in your favor.</small>
+          <small>"May the odds be ever in your favor."</small>
         </p>
       </header>
 
@@ -74,7 +74,37 @@ function App(props) {
 
         {/* Credits section */}
         <aside>
-          <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+          <p>
+            <u>BUILT/DESIGN BY</u>
+            <br />
+            <ul>
+              <li>Joseph Dubon</li>
+              <li>josephdubon@pm.me</li>
+            </ul>
+            <br /> <br />
+            <u>BUILT WITH</u>
+            <br />
+            <ul>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>ReactJS</li>
+            </ul>
+            <br /> <br />
+            <u>BUILT FOR</u>
+            <br />
+            <ul>
+              <li>Kenzie Academy</li>
+              <li>Software Engineering</li>
+              <li>April 2020 Cohort / Quarter 2</li>
+            </ul>
+            <br /> <br />
+            <small>
+              Gamer character licensed from Adobe Stock and edited with Adobe
+              Illustrator by Joseph Dubon
+              <br /> <br />
+              Made With Peace, Love and Understanding
+            </small>
+          </p>
         </aside>
       </section>
     </main>
