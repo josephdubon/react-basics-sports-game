@@ -64,12 +64,12 @@ function App(props) {
       <section id="teamsArea">
         {/* Home Team */}
         <section id="homeTeam">
-          <Team teamName="HOME Team" teamLogo="/../assets/homeTeam.png" />
+          <Team teamName="HOME Team" teamLogo="./assets/homeTeam.png" />
         </section>
 
         {/* Visiting team */}
         <section id="visitTeam">
-          <Team teamName="VISITOR Team" teamLogo="/../assets/visitingTeam.png" />
+          <Team teamName="VISITOR Team" teamLogo="./assets/visitingTeam.png" />
         </section>
 
         {/* Credits section */}
