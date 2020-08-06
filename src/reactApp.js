@@ -50,26 +50,34 @@ class Team extends React.Component {
 // Deafault App component that all other compents are rendered through
 function App(props) {
   return (
-    <div id="gameBody">
-      <span id="gameHeader">
+    <main>
+      <header>
         <h1>Welcome to my simple sports game</h1>
         <p>
-          Each click of the 'shoot button' will give you a 1 in 4 chance to score. 
+          Each click of the 'shoot button' will give you a 1 in 4 chance to
+          score.
+          <br />
+          <small>May the odds be ever in your favor.</small>
         </p>
-      </span>
+      </header>
 
-      <span id="teamsArea">
+      <section id="teamsArea">
         {/* Home Team */}
-        <span id="homeTeam">
+        <section id="homeTeam">
           <Team teamName="HOME Team" teamLogo="../assets/homeTeam.png" />
-        </span>
+        </section>
 
         {/* Visiting team */}
-        <span id="visitTeam">
+        <section id="visitTeam">
           <Team teamName="VISITOR Team" teamLogo="../assets/visitingTeam.png" />
-        </span>
-      </span>
-    </div>
+        </section>
+
+        {/* Credits section */}
+        <aside>
+          <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+        </aside>
+      </section>
+    </main>
   )
 }
 
