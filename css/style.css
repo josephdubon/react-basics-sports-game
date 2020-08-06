@@ -163,6 +163,7 @@ html {
 #gameHeader {
   font-size: 30px;
   text-transform: uppercase;
+  text-shadow: ;
   padding: 5px;
   margin: 5px;
 }
@@ -176,19 +177,22 @@ html {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  padding: 0 25px;
+  font-size: 18px;
+  text-align: center;
   border: 25px solid black;
-  margin: 15px 0;
+  margin: 15px;
 }
 
 #teamsArea img {
   width: 300px;
+  margin: 25px;
 }
 
 #homeTeam {
   background-color: rgba(0, 0, 0, 0.76);
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   padding: 25px;
   margin: 15px;
 }
@@ -201,3 +205,22 @@ html {
   padding: 25px;
   margin: 15px;
 }
+
+button {
+  background-color: #1b6e1f;
+  border-radius: 5px;
+  border: 4px double #fff;
+  color: #e3e3e3;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #001d00;
+
+}
+
+/* End cool button effect code */
