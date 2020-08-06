@@ -20,10 +20,10 @@ class Team extends React.Component {
     let shotTaken = Math.floor(Math.random() * 4 + 1)
     // When a shot is taken the Shots Taken count should always increase
     this.setState({
-      shotsTaken: (this.state.shotsTaken + 1),
+      shotsTaken: this.state.shotsTaken + 1,
       // There should be a random chance that the Score counter increases.
       // 1 in 4 chance of scoring function
-      score: shotTaken === 2 ? (this.state.score + 1) : this.state.score,
+      score: shotTaken === 2 ? this.state.score + 1 : this.state.score,
     })
   }
 
