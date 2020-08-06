@@ -51,12 +51,12 @@ class Team extends React.Component {
 function App(props) {
   return (
     <div id="gameBody">
-      <h1 id="gameHeader"> Welcome to the sports game starter </h1>
-
-      <p id="gameIntro">
-        This file represents the code after completing the setup step in the lab
-        instructions.
-      </p>
+      <span id="gameHeader">
+        <h1>Welcome to my simple sports game</h1>
+        <p>
+          Each click of the 'shoot button' will give you a 1 in 4 chance to score. 
+        </p>
+      </span>
 
       <span id="teamsArea">
         {/* Home Team */}

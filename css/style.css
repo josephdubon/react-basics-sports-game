@@ -148,6 +148,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   padding: 15px;
   margin: 5px;
@@ -161,11 +162,15 @@ html {
 }
 
 #gameHeader {
-  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.575);
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.4;
   text-transform: uppercase;
-  text-shadow: ;
-  padding: 5px;
-  margin: 5px;
+  text-shadow: 4px 4px black;
+  padding: 25px;
+  border: 5px solid white;
+  margin: 15px;
 }
 
 #gameIntro {
@@ -215,12 +220,16 @@ button {
   padding: 20px;
   width: 200px;
   cursor: pointer;
-  transition: all 0.5s;
 }
 
 button:hover {
   background-color: #001d00;
+}
 
+/* Cool click effect from tut at https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_sel_active */
+button:active {
+  background-color: #255827;
+  transform: translateY(5px);
 }
 
 /* End cool button effect code */
