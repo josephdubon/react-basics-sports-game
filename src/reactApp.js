@@ -10,6 +10,7 @@ class Team extends React.Component {
       teamName: this.props.teamName,
       teamLogo: this.props.teamLogo,
       shotsTaken: this.props.shotsTaken || 0,
+      score: this.props.score || 0,
     }
   }
 
