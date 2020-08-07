@@ -13,7 +13,7 @@ class Team extends React.Component {
       sfxScore: this.props.sfxScore || 'assets/sfxHomeScore.mp3',
       shotsTaken: this.props.shotsTaken || 0,
       score: this.props.score || 0,
-      shotsPercentage: 0,
+      shotsPercentage: null,
     }
   }
 
