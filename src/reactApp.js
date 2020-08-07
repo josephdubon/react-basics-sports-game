@@ -9,18 +9,40 @@ class Team extends React.Component {
     this.state = {
       teamName: this.props.teamName,
       teamLogo: this.props.teamLogo,
+      sfxShoot: this.props.sfxShoot || 'assets/sfxShoot.mp3',
+      sfxScore: this.props.sfxScore || 'assets/sfxHomeScore.mp3',
       shotsTaken: this.props.shotsTaken || 0,
       score: this.props.score || 0,
+      shotsPercentage: 0,
+    }
+  }
+
+  shootSound = () => {
+    // Play shoot sound
+    let sfxShoot = new Audio(this.state.sfxShoot)
+    // Play score sound
+    let sfxScore = new Audio(this.state.sfxScore)
+
+    if (this.setState === 2) {
+      sfxShoot.play()
+      sfxScore.play()
+      console.log('score')
+    } else {
+      sfxShoot.play()
     }
   }
 
   // Shoot button
-  shootButton = (event) => {
+  shootButton = () => {
     console.log('Shoooot!')
+    // Play sounds
+    this.shootSound()
     // Generate numer between
     let shotTaken = Math.floor(Math.random() * 4 + 1)
+    let didScore = false
     // When a shot is taken the Shots Taken count should always increase
     this.setState({
+      sfxShoot: this.state.sfxShoot,
       shotsTaken: this.state.shotsTaken + 1,
       // There should be a random chance that the Score counter increases.
       // 1 in 4 chance of scoring function
@@ -39,6 +61,9 @@ class Team extends React.Component {
         Shots Taken: {this.state.shotsTaken}
         <br />
         Score: {this.state.score}
+        <br />
+        <br />
+        Shot Percentage: {this.state.shotsTaken / this.state.score}
         <br />
         <br />
         <button onClick={this.shootButton}>Shoot!</button>
@@ -64,12 +89,20 @@ function App(props) {
       <section id="teamsArea">
         {/* Home Team */}
         <section id="homeTeam">
-          <Team teamName="HOME Team" teamLogo="assets/homeTeam.png" />
+          <Team
+            teamName="HOME Team"
+            teamLogo="assets/homeTeam.png"
+            sfxScore="assets/sfxHomeScore.mp3"
+          />
         </section>
 
         {/* Visiting team */}
         <section id="visitTeam">
-          <Team teamName="VISITOR Team" teamLogo="assets/visitingTeam.png" />
+          <Team
+            teamName="VISITOR Team"
+            teamLogo="assets/visitingTeam.png"
+            sfxScore="assets/sfxVisitorScore.mp3"
+          />
         </section>
 
         {/* Credits section */}
