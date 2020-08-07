@@ -36,37 +36,28 @@ function Game(props) {
 
         {/* Credits section */}
         <aside>
-          <p>
-            <u>BUILT/DESIGN BY</u>
-            <br />
-            <ul>
-              <li>Joseph Dubon</li>
-              <li>josephdubon@pm.me</li>
-            </ul>
+          <u>BUILT/DESIGN BY</u>
+          <br />
+          <ul>
+            <li>Joseph Dubon</li>
+            <li>josephdubon@pm.me</li>
+          </ul>
+          <u>BUILT WITH</u>
+          <ul>
+            <li>HTML5, CSS3, and ReactJS</li>
+          </ul>
+          <u>BUILT FOR</u>
+          <ul>
+            <li>Kenzie Academy</li>
+            <li>Software Engineering</li>
+            <li>April 2020 Cohort / Quarter 2</li>
+          </ul>
+          <small>
+            Gamer character licensed from Adobe Stock and edited with Adobe
+            Illustrator by Joseph Dubon
             <br /> <br />
-            <u>BUILT WITH</u>
-            <br />
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>ReactJS</li>
-            </ul>
-            <br /> <br />
-            <u>BUILT FOR</u>
-            <br />
-            <ul>
-              <li>Kenzie Academy</li>
-              <li>Software Engineering</li>
-              <li>April 2020 Cohort / Quarter 2</li>
-            </ul>
-            <br /> <br />
-            <small>
-              Gamer character licensed from Adobe Stock and edited with Adobe
-              Illustrator by Joseph Dubon
-              <br /> <br />
-              Made With Peace, Love and Understanding
-            </small>
-          </p>
+            Made With Peace, Love and Understanding
+          </small>
         </aside>
       </section>
     </main>
