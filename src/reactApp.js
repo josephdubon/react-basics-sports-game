@@ -1,6 +1,78 @@
 // Test connection to index.html
 console.log('Connection confirmed. Happy hacking!')
 
+// Game
+function Game(props) {
+  return (
+    <main>
+      <header>
+        <h1>Welcome to: {props.venueName}</h1>
+        <p>
+          Each click of the 'shoot button' will give you a 1 in 4 chance to
+          score.
+          <br />
+        </p>
+        <small>"May the odds be ever in your favor."</small>
+      </header>
+
+      <section id="teamsArea">
+        {/* Home Team */}
+        <section id="homeTeam">
+          <Team
+            teamName="HOME Team"
+            teamLogo="assets/homeTeam.png"
+            sfxScore="assets/sfxHomeScore.mp3"
+          />
+        </section>
+
+        {/* Visiting team */}
+        <section id="visitTeam">
+          <Team
+            teamName="VISITOR Team"
+            teamLogo="assets/visitingTeam.png"
+            sfxScore="assets/sfxVisitorScore.mp3"
+          />
+        </section>
+
+        {/* Credits section */}
+        <aside>
+          <p>
+            <u>BUILT/DESIGN BY</u>
+            <br />
+            <ul>
+              <li>Joseph Dubon</li>
+              <li>josephdubon@pm.me</li>
+            </ul>
+            <br /> <br />
+            <u>BUILT WITH</u>
+            <br />
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>ReactJS</li>
+            </ul>
+            <br /> <br />
+            <u>BUILT FOR</u>
+            <br />
+            <ul>
+              <li>Kenzie Academy</li>
+              <li>Software Engineering</li>
+              <li>April 2020 Cohort / Quarter 2</li>
+            </ul>
+            <br /> <br />
+            <small>
+              Gamer character licensed from Adobe Stock and edited with Adobe
+              Illustrator by Joseph Dubon
+              <br /> <br />
+              Made With Peace, Love and Understanding
+            </small>
+          </p>
+        </aside>
+      </section>
+    </main>
+  )
+}
+
 // Team component
 class Team extends React.Component {
   constructor(props) {
@@ -62,7 +134,7 @@ class Team extends React.Component {
         <br />
         <br />
         Shot Percentage:
-        {this.state.score > 0
+        {this.state.shotsTaken > 0
           ? this.state.shotsTaken / this.state.score
           : this.shotsPercentage}
         <br />
@@ -75,74 +147,8 @@ class Team extends React.Component {
 
 // Deafault App component that all other compents are rendered through
 function App(props) {
-  return (
-    <main>
-      <header>
-        <h1>Welcome to my simple sports game</h1>
-        <p>
-          Each click of the 'shoot button' will give you a 1 in 4 chance to
-          score.
-          <br />
-          <small>"May the odds be ever in your favor."</small>
-        </p>
-      </header>
-
-      <section id="teamsArea">
-        {/* Home Team */}
-        <section id="homeTeam">
-          <Team
-            teamName="HOME Team"
-            teamLogo="assets/homeTeam.png"
-            sfxScore="assets/sfxHomeScore.mp3"
-          />
-        </section>
-
-        {/* Visiting team */}
-        <section id="visitTeam">
-          <Team
-            teamName="VISITOR Team"
-            teamLogo="assets/visitingTeam.png"
-            sfxScore="assets/sfxVisitorScore.mp3"
-          />
-        </section>
-
-        {/* Credits section */}
-        <aside>
-          <p>
-            <u>BUILT/DESIGN BY</u>
-            <br />
-            <ul>
-              <li>Joseph Dubon</li>
-              <li>josephdubon@pm.me</li>
-            </ul>
-            <br /> <br />
-            <u>BUILT WITH</u>
-            <br />
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>ReactJS</li>
-            </ul>
-            <br /> <br />
-            <u>BUILT FOR</u>
-            <br />
-            <ul>
-              <li>Kenzie Academy</li>
-              <li>Software Engineering</li>
-              <li>April 2020 Cohort / Quarter 2</li>
-            </ul>
-            <br /> <br />
-            <small>
-              Gamer character licensed from Adobe Stock and edited with Adobe
-              Illustrator by Joseph Dubon
-              <br /> <br />
-              Made With Peace, Love and Understanding
-            </small>
-          </p>
-        </aside>
-      </section>
-    </main>
-  )
+  // Change venue name through prop
+  return <Game venueName="The Thunder Dome" />
 }
 
 //Render the application
