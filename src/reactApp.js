@@ -49,8 +49,7 @@ function Game(props) {
           <u>BUILT FOR</u>
           <ul>
             <li>Kenzie Academy</li>
-            <li>Software Engineering</li>
-            <li>April 2020 Cohort / Quarter 2</li>
+            <li>Software Engineering Q2</li>
           </ul>
           <small>
             Gamer character licensed from Adobe Stock and edited with Adobe
