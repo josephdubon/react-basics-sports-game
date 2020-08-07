@@ -17,33 +17,31 @@ class Team extends React.Component {
     }
   }
 
-  shootSound = () => {
+  // Shoot button
+  shootButton = () => {
+    // Generate numer between
+    let shotTaken = Math.floor(Math.random() * 4 + 1)
+    let didScore = shotTaken === 2 ? true : false
+
+    // Play sounds
     // Play shoot sound
     let sfxShoot = new Audio(this.state.sfxShoot)
     // Play score sound
     let sfxScore = new Audio(this.state.sfxScore)
 
-    if (this.setState === 2) {
+    if (didScore) {
       sfxShoot.play()
       sfxScore.play()
       console.log('score')
     } else {
       sfxShoot.play()
     }
-  }
 
-  // Shoot button
-  shootButton = () => {
-    console.log('Shoooot!')
-    // Play sounds
-    this.shootSound()
-    // Generate numer between
-    let shotTaken = Math.floor(Math.random() * 4 + 1)
-    let didScore = shotTaken === 2 ? true : false
     // When a shot is taken the Shots Taken count should always increase
     this.setState({
       sfxShoot: this.state.sfxShoot,
       shotsTaken: this.state.shotsTaken + 1,
+
       // There should be a random chance that the Score counter increases.
       // 1 in 4 chance of scoring function
       score: didScore ? this.state.score + 1 : this.state.score,
