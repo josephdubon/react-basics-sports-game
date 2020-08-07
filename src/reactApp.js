@@ -13,7 +13,7 @@ class Team extends React.Component {
       sfxScore: this.props.sfxScore || 'assets/sfxHomeScore.mp3',
       shotsTaken: this.props.shotsTaken || 0,
       score: this.props.score || 0,
-      shotsPercentage: null,
+      shotsPercentage: 0,
     }
   }
 
@@ -66,7 +66,7 @@ class Team extends React.Component {
         Shot Percentage:
         {this.state.score > 0
           ? this.state.shotsTaken / this.state.score
-          : ' ' + 0}
+          : this.shotsPercentage}
         <br />
         <br />
         <button onClick={this.shootButton}>Shoot!</button>
