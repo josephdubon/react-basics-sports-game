@@ -1,4 +1,4 @@
-# React Basics Lab: A Sports Game
+# React Project: A Sports Game
 
 Fun click based 2 player game 
 
